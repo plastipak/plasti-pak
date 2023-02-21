@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plasti-Pak</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#004d90">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/product.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo logo">
+            <img src="images/logo-short.svg" alt="Logo">
+          </a>
+
+          <nav class="menu one">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="./index.html" class="menu__list-link">
+                  Головна
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="./product.html" class="menu__list-link">
+                  Продукція
+                </a>
+                <svg class="menu__arrow" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_4160_4329)">
+                    <path d="M13 1L7 7L1 1" stroke="#004d90" stroke-width="2" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4160_4329">
+                      <rect width="14" height="8" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a data-goto=".about-products" href="#" class="menu__sub-link">Про наш
+                      продукт</a></li>
+                  <li class="menu__sub-item"><a data-goto=".product" href="#" class="menu__sub-link">Товари</a></li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a href="technologies.html" class="menu__list-link">
+                  Технологія
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a href="blog.html" class="menu__list-link">
+                  Блог & Преса
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btns">
+            <a href="" class="header__contact">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23 6V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6ZM3.10658 5.55395C3.27196 5.22692 3.61204 5 4 5H20C20.388 5 20.728 5.22692 20.8934 5.55395L12 11.7793L3.10658 5.55395ZM3 7.92066L10.8531 13.4178C11.5417 13.8999 12.4583 13.8999 13.1469 13.4178L21 7.92066V18C21 18.5477 20.5477 19 20 19H4C3.45228 19 3 18.5477 3 18V7.92066Z"
+                  fill="#004d90" />
+              </svg>
+            </a>
+            <a href="" class="header__language">
+              <svg fill="#004d90" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 1.25c-8.146 0-14.75 6.604-14.75 14.75s6.604 14.75 14.75 14.75c8.146 0 14.75-6.604 14.75-14.75v0c-0.010-8.142-6.608-14.74-14.749-14.75h-0.001zM16.004 29.055c-1.6-1.439-2.871-3.21-3.709-5.209l-0.036-0.096h7.501c-0.865 2.1-2.142 3.874-3.741 5.292l-0.015 0.013zM11.715 22.25c-0.535-1.635-0.867-3.519-0.918-5.474l-0.001-0.026h10.408c-0.049 1.979-0.376 3.865-0.944 5.642l0.039-0.142zM2.788 16.75h6.49c0.047 1.976 0.347 3.863 0.87 5.655l-0.039-0.155h-5.787c-0.868-1.592-1.423-3.47-1.533-5.466l-0.002-0.034zM15.996 2.946c1.662 1.487 2.971 3.333 3.809 5.419l0.035 0.098-7.682-0.037c0.864-2.174 2.172-4.010 3.823-5.467l0.015-0.013zM20.356 9.966c0.492 1.571 0.799 3.383 0.848 5.258l0.001 0.026h-10.408c0.048-1.916 0.355-3.742 0.887-5.47l-0.038 0.143zM9.278 15.25h-6.49c0.11-1.977 0.641-3.806 1.502-5.433l-0.034 0.071 5.808 0.028c-0.456 1.587-0.74 3.418-0.786 5.307l-0.001 0.027zM22.722 16.75h6.49c-0.111 2.030-0.666 3.908-1.569 5.569l0.034-0.069h-5.787c0.484-1.637 0.785-3.524 0.831-5.474l0-0.026zM22.722 15.25c-0.046-1.896-0.325-3.706-0.808-5.432l0.037 0.155 5.848 0.028c0.794 1.525 1.304 3.316 1.411 5.214l0.002 0.035zM26.909 8.497l-5.441-0.026c-0.784-2.139-1.911-3.977-3.331-5.545l0.013 0.014c3.653 0.618 6.74 2.655 8.731 5.513l0.029 0.043zM13.85 2.941c-1.396 1.54-2.516 3.36-3.262 5.363l-0.038 0.115-5.381-0.026c2.019-2.845 5.073-4.84 8.602-5.441l0.078-0.011zM5.276 23.75h5.334c0.783 2.051 1.881 3.814 3.252 5.323l-0.012-0.014c-3.547-0.602-6.557-2.542-8.548-5.272l-0.026-0.038zM18.15 29.059c1.36-1.495 2.457-3.258 3.202-5.196l0.038-0.114h5.334c-2.017 2.768-5.027 4.708-8.496 5.298l-0.078 0.011z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top">
+        <div class="container">
+        </div>
+      </section>
+      <section class="about-products">
+        <div class="container">
+          <div class="about-products__inner">
+            <h1 class="about-products__title title">
+              ПРО НАШ ПРОДУКТ
+            </h1>
+            <div class="about-products__info">
+              <h6 class="about-products__subtitle subtitle">
+                Наше виробництво формує такі пропозиції:
+              </h6>
+              <ul class="about-products__list">
+                <li class="about-products__item text">Пет-тара будь-якого обсягу</li>
+                <li class="about-products__item text">Пет-тара для будь-якого призначення як для харчової продукції
+                  (вода,
+                  соки,
+                  пиво, молочні продукти), так і для інших галузей (медицина, косметологія, побутова хімія тощо)</li>
+                <li class="about-products__item text">Пет-тара прозора та кольорова</li>
+                <li class="about-products__item text">Пет-тара для індивідуальних проектів, нестандартної конфігурації
+                  та
+                  унікальної форми</li>
+              </ul>
+              <p class="about-products__text text">
+                Компанія PLASTI-PAK вигідно відрізняється необмеженим асортиментом продукції та можливістю закривати
+                сформовані потреби ринку України!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <h1 class="product__title title">
+            Товари
+          </h1>
+          <div class="product__wrapper">
+            <div class="product__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/500ml.jpg" alt="Пляшка 0.5л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 0.5л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/1000ml.jpg" alt="Пляшка 1л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 1л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/1500ml.jpg" alt="Пляшка 1.5л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 1.5л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/2000ml.jpg" alt="Пляшка 2л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 2л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/3000ml.jpg" alt="Пляшка 3л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 3л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/5000ml.jpg" alt="Пляшка 5л">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Пляшка 5л
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/28mm.jpg" alt="Кришка 28мм">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Кришка 28мм
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <div class="swiper-slide__img">
+                      <img src="images/slider/48mm.jpg" alt="Ручка 48мм">
+                    </div>
+                    <div class="swiper-slide__info text">
+                      Ручка 48мм
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__btns">
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="contacts__title title">
+            Контакти
+          </h1>
+          <div class="contacts__inner">
+            <div class="contacts__info info-contacts" data-aos="fade-right">
+              <div class="info-contacts__wrapper">
+                <h6 class="info-contacts__title subtitle">
+                  Контактні дані
+                </h6>
+                <p class="info-contacts__text text">
+                  Innovation Reliability Stability «ПЛАСТІ-ПАК»
+                </p>
+                <p class="info-contacts__text text">
+                  Код ЄДРПОУ 44665986
+                </p>
+              </div>
+              <ul class="info-contacts__list">
+                <li class="info-contacts__item info-contacts__item--phone">
+                  <a href="tel:+380673290939" class="info-contacts__link text">
+                    +38 (067) 329 09 39
+                  </a>
+                </li>
+                <li class="info-contacts__item info-contacts__item--mail">
+                  <a href="mailto:plastipakUA@gmail.com" class="info-contacts__link text">
+                    plastipakUA@gmail.com
+                  </a>
+                </li>
+                <li class="info-contacts__item info-contacts__item--map">
+                  <a href="#" class="info-contacts__link text">м. Київ, пр. Перемоги, 5в, 01135</a>
+                </li>
+              </ul>
+              <ul class="info-contacts__socials socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px">
+                      <path
+                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px">
+                      <path
+                        d="M 20.572266 3.0117188 C 20.239891 2.9764687 19.878625 3.028375 19.515625 3.171875 C 19.065625 3.348875 12.014406 6.3150313 5.4414062 9.0820312 L 3.2695312 9.9960938 C 2.4285313 10.337094 2.0039062 10.891672 2.0039062 11.638672 C 2.0039062 12.161672 2.22525 12.871063 3.28125 13.289062 L 6.9472656 14.757812 C 7.2642656 15.708813 8.0005469 17.916906 8.1855469 18.503906 C 8.2955469 18.851906 8.5733906 19.728594 9.2753906 19.933594 C 9.4193906 19.982594 9.5696563 20.007813 9.7226562 20.007812 C 10.165656 20.007812 10.484625 19.801641 10.640625 19.681641 L 12.970703 17.710938 L 15.800781 20.328125 C 15.909781 20.439125 16.486719 21 17.261719 21 C 18.228719 21 18.962234 20.195016 19.115234 19.416016 C 19.198234 18.989016 21.927734 5.2870625 21.927734 5.2890625 C 22.172734 4.1900625 21.732219 3.6199531 21.449219 3.3769531 C 21.206719 3.1694531 20.904641 3.0469688 20.572266 3.0117188 z M 19.910156 5.171875 C 19.533156 7.061875 17.478016 17.378234 17.166016 18.865234 L 13.029297 15.039062 L 10.222656 17.416016 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272669 8.8885973 10.404094 11.662239 8.0078125 13.025391 L 4.53125 11.636719 L 6.21875 10.927734 C 10.51775 9.1177344 18.174156 5.893875 19.910156 5.171875 z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--viber">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px">
+                      <path
+                        d="M 10 0.98046875 C 5.664 0.98046875 2 4.4353906 2 8.5253906 L 2 12.023438 C 2 15.409437 3.0230469 17.614281 5.1230469 18.738281 L 5.1230469 21.039062 C 5.1230469 21.820063 5.5876875 22.520219 6.3046875 22.824219 C 6.5486875 22.927219 6.8055469 22.978516 7.0605469 22.978516 C 7.5545469 22.978516 8.0401562 22.788688 8.4101562 22.429688 L 11.371094 19.570312 L 14.439453 19.570312 C 18.608453 19.570313 22 16.184437 22 12.023438 L 22 8.5253906 C 22 4.3643906 18.607453 0.98046875 14.439453 0.98046875 L 10 0.98046875 z M 10 2.9804688 L 14.441406 2.9804688 C 17.507406 2.9804688 20.001953 5.4673906 20.001953 8.5253906 L 20.001953 12.023438 C 20.001953 15.082437 17.506406 17.570312 14.441406 17.570312 L 10.96875 17.570312 C 10.70975 17.570312 10.460437 17.670562 10.273438 17.851562 L 7.1230469 20.894531 L 7.1230469 18.101562 C 7.1230469 17.692563 6.8721875 17.324828 6.4921875 17.173828 C 4.7911875 16.495828 4 14.859438 4 12.023438 L 4 8.5253906 C 4 5.5713906 6.804 2.9804688 10 2.9804688 z M 13 3.9804688 C 12.724 3.9804688 12.5 4.2044688 12.5 4.4804688 C 12.5 4.7564687 12.724 4.9804688 13 4.9804688 C 15.947 4.9804688 18 7.6154687 18 9.9804688 C 18 10.256469 18.224 10.480469 18.5 10.480469 C 18.776 10.480469 19 10.256469 19 9.9804688 C 19 7.1424688 16.536 3.9804688 13 3.9804688 z M 8.0019531 4.9902344 C 7.7637031 4.9543594 7.5116875 5.0109219 7.3046875 5.1699219 L 6.7167969 5.6230469 C 6.0227969 6.1560469 5.8013594 7.0969531 6.1933594 7.8769531 C 6.9313594 9.3439531 8.1679375 11.604406 9.2109375 12.566406 C 10.492938 13.750406 12.507172 15.15375 14.201172 15.84375 C 14.942172 16.14575 15.790547 15.933172 16.310547 15.326172 C 16.495547 15.110172 16.668359 14.890406 16.818359 14.691406 C 17.125359 14.283406 17.036094 13.70525 16.621094 13.40625 L 14.75 12.060547 C 14.348 11.771547 13.786375 11.851188 13.484375 12.242188 L 13.169922 12.589844 C 12.961922 12.819844 12.64875 12.940906 12.34375 12.878906 C 11.86775 12.782906 11.113187 12.472063 10.242188 11.539062 C 9.5231875 10.771063 9.1196562 9.9537656 8.9726562 9.3847656 C 8.8846563 9.0447656 9.0063438 8.6898438 9.2773438 8.4648438 L 9.5917969 8.203125 C 9.9587969 7.899125 10.030859 7.3665156 9.7558594 6.9785156 L 8.6152344 5.3671875 C 8.4652344 5.1546875 8.2402031 5.0261094 8.0019531 4.9902344 z M 13 5.9804688 C 12.724 5.9804688 12.5 6.2044688 12.5 6.4804688 C 12.5 6.7564687 12.724 6.9804688 13 6.9804688 C 14.514 6.9804688 16 8.4664688 16 9.9804688 C 16 10.256469 16.224 10.480469 16.5 10.480469 C 16.776 10.480469 17 10.256469 17 9.9804688 C 17 7.9244688 15.056 5.9804688 13 5.9804688 z M 13 7.9804688 C 12.724 7.9804688 12.5 8.2044688 12.5 8.4804688 C 12.5 8.7564687 12.724 8.9804688 13 8.9804688 C 13.645 8.9804688 14 9.3354688 14 9.9804688 C 14 10.256469 14.224 10.480469 14.5 10.480469 C 14.776 10.480469 15 10.256469 15 9.9804688 C 15 8.7844687 14.196 7.9804688 13 7.9804688 z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map" data-aos="fade-left">
+              <div class="contacts__map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.708085790124!2d30.484465815943885!3d50.446537795527576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8bf7c3fccd%3A0x34f8e27f8f326294!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCA10JIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1675464350237!5m2!1sru!2sua"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <p class="footer__text text">
+            2023 &copy Всі права захищені
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
